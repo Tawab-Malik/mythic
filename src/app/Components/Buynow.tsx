@@ -2,10 +2,7 @@
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import { Input } from "@nextui-org/react";
-import { useEffect } from 'react';
-import { useInView } from "react-intersection-observer";
 
-import { inView } from "framer-motion"
 
 import { motion, Variants } from "framer-motion";
 import React from 'react';
@@ -227,7 +224,7 @@ export default function Buynow() {
                         </div>
                     </div>
                     {/*  carts */}
-                    <div className=" grid-cols-1 grid  xl:grid-cols-3 max-w-7xl mx-[20px] md:mx-[50px] xl:mx-auto">
+                    <div className=" grid-cols-1 grid  xl:grid-cols-3 max-w-7xl mx-[20px] md:mx-[50px] space-y-0 xl:mx-auto lg:space-y-20 xl:space-y-0">
                         {/* cart1 */}
                         <div>
                             <div className="bg-[url(/images/download.png)] relative py-14 h-[650px] bg-no-repeat bg-center bg-cover">

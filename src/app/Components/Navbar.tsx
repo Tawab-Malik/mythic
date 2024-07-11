@@ -115,7 +115,7 @@ export default function Navbars() {
 
 
         }}>
-            <NavbarContent className="2xl:hidden block" justify="start">
+            <NavbarContent className="xl:hidden block" justify="start">
                 <NavbarMenuToggle />
             </NavbarContent>
             <div className=" gap-4  contents " >

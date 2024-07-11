@@ -6,6 +6,7 @@ import Lorem from "./Components/Lorem";
 import Mythic from "./Components/Mythic";
 import Typings from "./Components/Typings";
 import Market from "./Components/Market";
+import Tokenomics from "./Components/Tokenomic";
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
      <Lorem/>
      <Typings/>
      <Market/>
+     <Tokenomics/>
      </AnimatePresence>
      
      

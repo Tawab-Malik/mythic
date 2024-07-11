@@ -18,7 +18,7 @@ export default function Typings(){
    
             return(
                 <>
-                <section className=" bg-mount-image bg-no-repeat bg-cover bg-center relative  bg-fixed xl:h-[700px]">
+                <section className=" bg-mount-image bg-no-repeat bg-cover bg-center relative  bg-fixed  h-[1100px] xl:h-[700px]">
                 <Image src="/images/blur-gradient.webp" className=' h-[50px] absolute top-0 w-full' alt='img' height={1000} width={1000}></Image>
                 <div className=" py-[50px]">
                         <Image
@@ -38,7 +38,7 @@ export default function Typings(){
                     </div>
                     <div className=" max-w-7xl mx-[20px] xl:mx-auto"> 
                     
-                        <h1 className=" text-5xl font-black text-white text-center pb-10">TYPINGS & ATTRIBUTES</h1>
+                        <h1 className=" text-[28px] xl:text-5xl font-black text-white text-center pb-10">TYPINGS & ATTRIBUTES</h1>
                         <div className=" space-y-10">
                             <div className=" flex gap-5 justify-center items-center">
                                 <Image src="/images/type/left-divider.webp" alt="img"  className="h-[5px] md:h-[15px] w-auto md:w-[300px]"  height="1000" width="1000"></Image>
