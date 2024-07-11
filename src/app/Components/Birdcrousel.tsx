@@ -53,21 +53,21 @@ export default function Carousel(){
                         <div className="flex justify-center relative z-10 mt-4 space-x-2">
                             <div className="flex justify-center items-center relative gap-5 z-10 mt-4 space-x-2">
                                 <button
-                                    className={`px-4 py-2 uppercase hover:text-[#74a81a] rounded-lg ${activeIndex === 0 ? 'text-5xl font-black text-[#74a81a]' : ' text-5xl font-black text-textbrown '}`}
+                                    className={`px-4 py-2 uppercase duration-300 hover:text-[#74a81a] rounded-lg ${activeIndex === 0 ? 'text-5xl font-black text-[#74a81a]' : ' text-5xl font-black text-textbrown '}`}
                                     onClick={() => handleButtonClick(0)}
                                 >
                                     Play
                                 </button>
                                 <Image src="/images/diamond.webp" alt="Diamond" className="w-6 h-10" width={200} height={200} />
                                 <button
-                                    className={`px-4 py-2 uppercase  hover:text-[#74a81a] rounded-lg ${activeIndex === 1 ? 'text-5xl font-black text-[#74a81a]' : ' text-5xl font-black text-textbrown '}`}
+                                    className={`px-4 py-2 uppercase duration-300  hover:text-[#74a81a] rounded-lg ${activeIndex === 1 ? 'text-5xl font-black text-[#74a81a]' : ' text-5xl font-black text-textbrown '}`}
                                     onClick={() => handleButtonClick(1)}
                                 >
                                     Collect
                                 </button>
                                 <Image src="/images/diamond.webp" alt="Diamond" className="w-6 h-10" width={200} height={200} />
                                 <button
-                                    className={`px-4 py-2 uppercase hover:text-[#74a81a] rounded-lg ${activeIndex === 2 ? 'text-5xl font-black text-[#74a81a]' : ' text-5xl font-black text-textbrown '}`}
+                                    className={`px-4 py-2 uppercase duration-300 hover:text-[#74a81a] rounded-lg ${activeIndex === 2 ? 'text-5xl font-black text-[#74a81a]' : ' text-5xl font-black text-textbrown '}`}
                                     onClick={() => handleButtonClick(2)}
                                 >
                                     Own
