@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --logo-image: url('/images/image.webp');
+  --card-image: url('/images/card.png');
+  --board-image: url('/images/board.png');
+  --mount-image: url('/images/mount.png');
+  --brown-image: url('/images/brownbg.png');
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +22,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+/* 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -30,4 +37,37 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+span.w-full.h-full.pointer-events-none.flex.flex-col.items-center.justify-center.text-inherit.group-data-\[pressed\=true\]\:opacity-70.transition-opacity.before\:content-\[\'\'\].before\:block.before\:h-px.before\:w-6.before\:bg-current.before\:transition-transform.before\:duration-150.before\:-translate-y-1.before\:rotate-0.group-data-\[open\=true\]\:before\:translate-y-px.group-data-\[open\=true\]\:before\:rotate-45.after\:content-\[\'\'\].after\:block.after\:h-px.after\:w-6.after\:bg-current.after\:transition-transform.after\:duration-150.after\:translate-y-1.after\:rotate-0.group-data-\[open\=true\]\:after\:translate-y-0.group-data-\[open\=true\]\:after\:-rotate-45 {
+  color: white;
 }
+.swiper-slide{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.swiper-button-prev{
+      
+      color: silver !important;
+      left: -1px !important;
+}
+.swiper-button-next{
+
+  
+  color: silver !important;
+  right: -2px !important;
+  
+ 
+}
+
+/* .btn:hover span{
+  display: none
+}
+
+.btn:hover:before {
+  content: "Comming Soon";
+  color:#e5d1cd;
+  font-size: 16px;
+  
+} */
+
