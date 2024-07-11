@@ -110,7 +110,7 @@ export default function Navbars() {
 
 
 
-        <Navbar isBordered isBlurred={false} className=" fixed  bg-[url(/images/navbar.png)] mt-5 h-20 bg-cover bg-center" classNames={{
+        <Navbar isBordered isBlurred={false} className=" !bg-transparent !max-w-[1600px] !mx-auto fixed  bg-[url(/images/navbar.png)] mt-5 h-20 bg-cover bg-center" classNames={{
             wrapper: '!max-w-[1600px] mx-auto ',
 
 
