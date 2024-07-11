@@ -32,7 +32,7 @@ export default function Carousel(){
         return(
             <>
             
-            <div className=" max-w-5xl mx-auto bg-[url(/Images/crousel/crouselbg.png)] py-[30px] rounded-[20px] shadow-2xl  bg-cover">
+            <div className=" max-w-5xl mx-auto bg-[url(/images/crousel/crouselbg.png)] py-[30px] rounded-[20px] shadow-2xl  bg-cover">
                         {/* <Image src='' className=' absolute top-0 z-10   w-full'   alt='img' height={1000} width={1000}></Image> */}
                         <div className="overflow-hidden relative  h-[30rem]">
 
