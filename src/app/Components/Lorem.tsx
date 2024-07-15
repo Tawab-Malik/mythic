@@ -23,7 +23,7 @@ const cardVariants: Variants = {
         transition: {
             type: "spring",
 
-            duration: 0.5,
+            duration: 1.5,
 
         },
 
@@ -40,7 +40,7 @@ const cardVariants2: Variants = {
         transition: {
             type: "spring",
 
-            duration: 0.5,
+            duration: 1.5,
 
         },
 

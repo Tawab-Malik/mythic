@@ -10,15 +10,16 @@ const cardVariants: Variants = {
     
     offscreen: {
         y: 100,
-        
+        opacity: 0, 
     },
     onscreen: {
         y: 50,
+        opacity: 1,
         
         transition: {
             type: "spring",
-            bounce: 0.8,
-            duration: 2.0,
+            // bounce: 0.8,
+            duration: 2.5,
             
         },
         
