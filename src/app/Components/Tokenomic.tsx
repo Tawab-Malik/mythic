@@ -80,7 +80,7 @@ export default function Tokenomics() {
                         <motion.div
                             initial="offscreen"
                             whileInView="onscreen"
-                            viewport={{ once: false, amount: 0.8 }}
+                            viewport={{ once: true, amount: 0.8 }}
                             variants={cardVariants}
                             className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
                             <div className=" ml-[115px] mt-[75px]">
