@@ -7,6 +7,9 @@ import Mythic from "./Components/Mythic";
 import Typings from "./Components/Typings";
 import Market from "./Components/Market";
 import Tokenomics from "./Components/Tokenomic";
+import Team from "./Components/Team";
+import Joinustoday from "./Components/JoinusToday";
+import Footer from "./Components/Footer";
 
 
 
@@ -21,6 +24,9 @@ export default function Home() {
      <Typings/>
      <Market/>
      <Tokenomics/>
+     <Team/>
+     <Joinustoday/>
+     <Footer/>
      </AnimatePresence>
      
      

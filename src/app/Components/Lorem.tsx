@@ -76,12 +76,12 @@ export default function Lorem() {
                 </div>
 
                 {/* div 2 */}
-                <div className=" flex justify-between xl:flex-row flex-col items-center max-w-7xl mx-[20px] xl:mx-auto  ">
+                <div className=" flex justify-between xl:flex-row flex-col items-center max-w-7xl mx-[20px] xl:mx-auto overflow-hidden  ">
                     {/* left card */}
                     <motion.div
                         initial="offscreen"
                         whileInView="onscreen"
-                        viewport={{ once: true, amount: 0.4 }}
+                        viewport={{ once: false, amount: 0.4 }}
                         variants={cardVariants2}
                         className="   w-full bg-card-image bg-no-repeat !bg-center xl:bg-cover space-y-5 pl-[20px] md:pl-[70px] py-16 flex justify-center xl:justify-normal xl:items-start flex-col items-center  "  >
                         {/* <img src="" className=" absolute top-0" alt="" /> */}
@@ -95,7 +95,7 @@ export default function Lorem() {
 
                         initial="offscreen"
                         whileInView="onscreen"
-                        viewport={{ once: true, amount: 0.4 }}
+                        viewport={{ once: false, amount: 0.4 }}
                         variants={cardVariants}
                         className=" w-full xl:w-[50%] xl:!m-10 space-y-5 ">
                         <Swiper

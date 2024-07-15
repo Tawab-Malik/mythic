@@ -240,7 +240,7 @@ export default function Buynow() {
                                 className="flex justify-center  "
                                 initial="offscreen"
                                 whileInView="onscreen"
-                                viewport={{ once: true, amount: 0.8 }}
+                                viewport={{ once: false, amount: 0.8 }}
                                 variants={cardVariants}
                             >
                                 <Image
@@ -269,7 +269,7 @@ export default function Buynow() {
                                 className="flex justify-center  "
                                 initial="offscreen"
                                 whileInView="onscreen"
-                                viewport={{ once: true, amount: 0.8 }}
+                                viewport={{ once: false, amount: 0.8 }}
                                 variants={cardVariants}
                             >
                                 <Image
@@ -299,7 +299,7 @@ export default function Buynow() {
                                 className="flex justify-center left-[15%]  "
                                 initial="offscreen"
                                 whileInView="onscreen"
-                                viewport={{ once: true, amount: 0.8 }}
+                                viewport={{ once: false, amount: 0.8 }}
                                 variants={cardVariants}
                             >
                                 <Image

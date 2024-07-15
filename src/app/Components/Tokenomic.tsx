@@ -4,22 +4,45 @@ import Image from "next/image";
 
 import { motion, Variants } from "framer-motion";
 import React from 'react';
-const cardVariants: Variants = {
-    
+
+const cardVariants2: Variants = {
+
     offscreen: {
         opacity: 0,
-        
+        y: 100,
+
     },
     onscreen: {
         opacity: 1,
-        
+        y: 0,
+
         transition: {
             // type: "ease-in",
             ease: "easeInOut",
             duration: 1.5,
-            
+
         },
-        
+
+    },
+};
+const cardVariants: Variants = {
+
+    offscreen: {
+        opacity: 0,
+
+
+    },
+    onscreen: {
+        opacity: 1,
+
+
+        transition: {
+            // type: "ease-in",
+            ease: "easeInOut",
+            duration: 1.5,
+
+        },
+
     },
 };
 
@@ -45,16 +68,21 @@ export default function Tokenomics() {
 
                     {/* ROADMAP */}
                     <h2 className=" text-5xl font-black text-lightbrown text-center">ROADMAP</h2>
-
-                    {/* main group */}
-                    <motion.div 
-                     initial="offscreen"
-                     whileInView="onscreen"
-                     viewport={{ once: true, amount: 0.8 }}
-                     variants={cardVariants}
-                    className=" bg-[url(/images/phase1.png)] bg-no-repeat flex justify-end items-center h-[740px] bg-center">
+                <div className=" py-20">
+                      {/*1st group */}
+                    <motion.div
+                        initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.8 }}
+                        variants={cardVariants}
+                        className=" bg-[url(/images/phase1.png)] bg-no-repeat flex justify-end items-center h-[740px] bg-center">
                         {/* <Image src="/images/phase1.png" className=" absolute top-0" alt="img" height={1000} width={1000}></Image> */}
-                        <div className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
+                        <motion.div
+                            initial="offscreen"
+                            whileInView="onscreen"
+                            viewport={{ once: false, amount: 0.8 }}
+                            variants={cardVariants}
+                            className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
                             <div className=" ml-[115px] mt-[75px]">
 
                                 <h2 className=" text-start text-lg text-[#cd7c47] font-black">Q1 2024</h2>
@@ -90,15 +118,20 @@ export default function Tokenomics() {
                             </div>
 
 
-                        </div>
+                        </motion.div>
                     </motion.div>
-                     {/* 2st group */}
-                     <motion.div  initial="offscreen"
-                     whileInView="onscreen"
-                     viewport={{ once: true, amount: 0.8 }}
-                     variants={cardVariants} className=" bg-[url(/images/phase2.png)] bg-no-repeat flex justify-start items-center h-[740px] bg-center mt-[-80px]">
+                    {/* 2st group */}
+                    <motion.div
+                        initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.8 }}
+                        variants={cardVariants}
+                        className=" bg-[url(/images/phase2.png)] bg-no-repeat flex justify-start items-center h-[740px] bg-center mt-[-80px]">
                         {/* <Image src="/images/phase1.png" className=" absolute top-0" alt="img" height={1000} width={1000}></Image> */}
-                        <div className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
+                        <motion.div whileInView="onscreen"
+                            viewport={{ once: false, amount: 0.8 }}
+                            variants={cardVariants2}
+                            className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
                             <div className=" ml-[115px] mt-[75px]">
 
                                 <h2 className=" text-start text-lg text-[#cd7c47] font-black">Q2 2024</h2>
@@ -134,15 +167,20 @@ export default function Tokenomics() {
                             </div>
 
 
-                        </div>
+                        </motion.div>
                     </motion.div>
-                     {/* 3st group */}
-                     <motion.div  initial="offscreen"
-                     whileInView="onscreen"
-                     viewport={{ once: true, amount: 0.8 }}
-                     variants={cardVariants} className=" bg-[url(/images/phase3.png)] bg-no-repeat flex justify-end items-center h-[740px] bg-center mt-[-80px]">
+                    {/* 3st group */}
+                    <motion.div
+                        initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.8 }}
+                        variants={cardVariants} className=" bg-[url(/images/phase3.png)] bg-no-repeat flex justify-end items-center h-[740px] bg-center mt-[-80px]">
                         {/* <Image src="/images/phase1.png" className=" absolute top-0" alt="img" height={1000} width={1000}></Image> */}
-                        <div className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
+                        <motion.div
+                            whileInView="onscreen"
+                            viewport={{ once: true, amount: 0.8 }}
+                            variants={cardVariants2}
+                            className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
                             <div className=" ml-[115px] mt-[75px]">
 
                                 <h2 className=" text-start text-lg text-[#cd7c47] font-black">Q3 2024</h2>
@@ -178,15 +216,20 @@ export default function Tokenomics() {
                             </div>
 
 
-                        </div>
+                        </motion.div>
                     </motion.div>
-                     {/* 4st group */}
-                     <motion.div  initial="offscreen"
-                     whileInView="onscreen"
-                     viewport={{ once: true, amount: 0.8 }}
-                     variants={cardVariants} className=" bg-[url(/images/phase4-new.png)] bg-no-repeat flex justify-start items-center h-[740px] bg-center mt-[-80px]">
+                    {/* 4st group */}
+                    <motion.div
+                        initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.8 }}
+                        variants={cardVariants} className=" bg-[url(/images/phase4-new.png)] bg-no-repeat flex justify-start items-center h-[740px] bg-center mt-[-80px]">
                         {/* <Image src="/images/phase1.png" className=" absolute top-0" alt="img" height={1000} width={1000}></Image> */}
-                        <div className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
+                        <motion.div
+                            whileInView="onscreen"
+                            viewport={{ once: true, amount: 0.8 }}
+                            variants={cardVariants2}
+                            className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
                             <div className=" ml-[115px] mt-[75px]">
 
                                 <h2 className=" text-start text-lg text-[#cd7c47] font-black">Q4 2024</h2>
@@ -222,20 +265,25 @@ export default function Tokenomics() {
                             </div>
 
 
-                        </div>
+                        </motion.div>
                     </motion.div>
-                     {/* 5st group */}
-                     <motion.div  initial="offscreen"
-                     whileInView="onscreen"
-                     viewport={{ once: true, amount: 0.8 }}
-                     variants={cardVariants} className=" bg-[url(/images/phase5.png)] bg-no-repeat flex justify-end items-center h-[740px] bg-center mt-[-80px]">
+                    {/* 5st group */}
+                    <motion.div
+                        initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.8 }}
+                        variants={cardVariants} className=" bg-[url(/images/phase5.png)] bg-no-repeat flex justify-end items-center h-[740px] bg-center mt-[-80px]">
                         {/* <Image src="/images/phase1.png" className=" absolute top-0" alt="img" height={1000} width={1000}></Image> */}
-                        <div className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
+                        <motion.div
+                            whileInView="onscreen"
+                            viewport={{ once: true, amount: 0.8 }}
+                            variants={cardVariants2}
+                            className=" bg-[url(/images/paper.png)] bg-no-repeat  bg-cover w-[550px] h-[500px]  bg-center  ">
                             <div className=" ml-[115px] mt-[75px]">
 
                                 <h2 className=" text-start text-lg text-[#cd7c47] font-black">Q5 2024</h2>
                                 <h3 className=" text-2xl font-black text-textbrown">WELCOME TO
-                                METAVERSE
+                                    METAVERSE
                                 </h3>
                                 <Image src="/images/barrow.webp" alt="img" className=" h-3 w-[300px]" height={100} width={400}></Image>
 
@@ -267,8 +315,10 @@ export default function Tokenomics() {
                             </div>
 
 
-                        </div>
+                        </motion.div>
                     </motion.div>
+                </div>
+                   
 
 
 
@@ -277,6 +327,8 @@ export default function Tokenomics() {
 
 
                 </div>
+                <Image src="/images/grassend2.webp" className=" w-full absolute bottom-0 h-[100px]" alt="img" height={1000} width={2000}></Image>
+
             </section>
         </>
     )
